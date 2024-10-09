@@ -10,7 +10,6 @@ const useNowPlayingMovies = () => {
     const favouriteMovies = async () => {
         const data = await fetch(NOW_PLAYING_URL, API_OPTIONS);
         const jsonData = await data.json();
-        //console.log(jsonData.results);
         dispatch(addNowPlayingMovies(jsonData.results));
     }
 

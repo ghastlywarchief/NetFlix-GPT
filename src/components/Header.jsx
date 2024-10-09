@@ -10,7 +10,6 @@ import { LOGO_URL } from "../utils/constants";
 const Header = () => {
 
     const location = useLocation();
-    //console.log(location);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
@@ -40,7 +39,7 @@ const Header = () => {
     const handleClick = () => {
         if(isUserLoggedIn)
         {
-            signOut(auth).then(() => {console.log("Sign Out Clicked");})
+            signOut(auth).then(() => {})
             .catch((error) => {console.log(error.code + " : " + error.message);})
         }
     }

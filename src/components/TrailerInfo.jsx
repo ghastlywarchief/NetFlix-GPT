@@ -5,7 +5,7 @@ const TrailerInfo = ({movie}) => {
     const {title, overview} = movie;
 
   return (
-    <div className='absolute py-[20%] px-[6%] bg-gradient-to-r from-black w-screen aspect-video'>
+    <div className='absolute py-[13%] px-[6%] bg-gradient-to-r from-black w-screen aspect-video'>
         <h1 className='text-6xl font-bold text-white'>{title}</h1>
         <p className='text-xl w-[40%] text-white py-8'>{overview}</p>
         <div className="">

@@ -11,3 +11,19 @@ export const API_OPTIONS = {
 }   
 
 export const NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing";
+
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";
+
+export const IFRAME_EMBED_URL_PREFIX = "https://www.youtube.com/embed/"
+
+export const IFRAME_EMBED_URL_SUFFIX = "?loop=1&autoplay=1&mute=1&si=r-YviPJmryct7LO5"
+
+export const POPULAR_URL = "https://api.themoviedb.org/3/movie/popular"
+
+export const TOP_RATED_URL = "https://api.themoviedb.org/3/movie/top_rated"
+
+export const UPCOMING_URL = "https://api.themoviedb.org/3/movie/upcoming"
+
+export const TRAILER_PREFIX = 'https://api.themoviedb.org/3/movie/'
+
+export const TRAILER_SUFFIX = '/videos?language=en-US'

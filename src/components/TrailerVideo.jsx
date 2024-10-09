@@ -1,6 +1,7 @@
 import React from 'react'
 import useTrailerVideo from '../hooks/useTrailerVideo';
 import { useSelector } from 'react-redux';
+import { IFRAME_EMBED_URL_PREFIX, IFRAME_EMBED_URL_SUFFIX } from '../utils/constants';
 
 const TrailerVideo = ({id}) => {
 
@@ -9,12 +10,10 @@ const TrailerVideo = ({id}) => {
 
     if(!trailer) return;
 
-    console.log(trailer.key);
-
   return (
     <div>
         <iframe className='w-screen aspect-video'
-            src={"https://www.youtube.com/embed/"+ trailer?.key +"?loop=1&autoplay=1&mute=1&si=r-YviPJmryct7LO5"}
+            src={IFRAME_EMBED_URL_PREFIX + trailer?.key + IFRAME_EMBED_URL_SUFFIX}
             title="YouTube video player" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerPolicy="strict-origin-when-cross-origin"

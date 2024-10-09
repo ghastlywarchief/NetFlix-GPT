@@ -13,7 +13,6 @@ const Login = () => {
     const confirmPassword = useRef(null);
 
     const handleSubmit = () => {
-        console.log("");
         if(!formtype){
             if(confirmPassword.current.value === password.current.value){
                 const error = validateEmailandPassword(email.current.value, password.current.value);
@@ -27,11 +26,9 @@ const Login = () => {
             setErrorMessage(error);
         }
         
-        // console.log(errorMessage);
         //auth logic
         if(errorMessage) return;
         if(!formtype){
-            console.log("");
             createUserWithEmailAndPassword(auth, email.current.value, password.current.value).then(() => {})
             .catch((error) => {
                     const errorCode = error.code;

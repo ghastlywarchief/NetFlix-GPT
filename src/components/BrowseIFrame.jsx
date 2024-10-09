@@ -9,10 +9,9 @@ const BrowseIFrame = () => {
     if(!movieList)  return;
 
     const movieTrailer = movieList[0];
-    console.log(movieTrailer);
 
   return (
-    <div className='absolute'>
+    <div>
         <TrailerInfo movie={movieTrailer}/>
         <TrailerVideo id={movieTrailer.id}/>
     </div>
