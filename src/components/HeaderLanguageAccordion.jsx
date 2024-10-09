@@ -14,7 +14,7 @@ const HeaderLanguageAccordion = () => {
     return (
 
         <select onChange={handleChange} value={currLang} className="h-12 m-2 rounded-md px-6 bg-black text-white border border-white font-bold">
-            {supportedLanguages.map((lang) => (<option value={lang.code} className="bg-white text-black">{lang.name}</option>))}
+            {supportedLanguages.map((lang) => (<option key={lang.code} value={lang.code} className="bg-white text-black">{lang.name}</option>))}
         </select>
         
     )

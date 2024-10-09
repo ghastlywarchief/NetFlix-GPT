@@ -6,7 +6,7 @@ export const API_OPTIONS = {
     method: "GET",
     headers: {
         accept: "application/json",
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNGRmZjc5ODgyMmIxOWI3ZmZiNDlhZmYwYjRlYmYxNiIsIm5iZiI6MTcyODMwNjM4Mi4wNjgxNzIsInN1YiI6IjY3MDNkYjhiM2Q3YjNjNmMwNzc5NWI3YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TH-TlB5KSp2SH560O4Ojptz_0lT1SM4nKxyUyNnBjB4"
+        Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY
     }
 }   
 
@@ -28,4 +28,4 @@ export const TRAILER_PREFIX = 'https://api.themoviedb.org/3/movie/'
 
 export const TRAILER_SUFFIX = '/videos?language=en-US'
 
-export const GPT_API_KEY = 'sk-FAwp1l8WF1Ws6WOVgn7qaBtiNtodKS4Ednh6Le63DAT3BlbkFJKZRZD_rh0Fc9lYDIh56P8kuTisGYJjYCRY83S--OoA'
+export const GPT_API_KEY = process.env.REACT_APP_OPENAI_KEY

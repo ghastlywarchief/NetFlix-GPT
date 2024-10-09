@@ -10,16 +10,16 @@ const GPTSearch = () => {
     const searchText = useRef(null);
 
     const fetchQueryData = async () => {
-        const fetchedData = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
-            messages: [
-                {
-                    role: "user",
-                    content: "Give me a list of 5 " + searchText.current.value + "in a comma separated manner as in example ahead i.e Golmaal,Kick,Sholay,1920,Haunted",
-                },
-            ],
-        });
-        console.log(fetchedData.choices);
+        // const fetchedData = await openai.chat.completions.create({
+        //     model: "gpt-3.5-turbo",
+        //     messages: [
+        //         {
+        //             role: "user",
+        //             content: "Give me a list of 5 " + searchText.current.value + "in a comma separated manner as in example ahead i.e Golmaal,Kick,Sholay,1920,Haunted",
+        //         },
+        //     ],
+        // });
+        // console.log(fetchedData.choices);
     }
 
     const handleClick = () => {
