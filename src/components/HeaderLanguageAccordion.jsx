@@ -1,31 +1,21 @@
-import { useState } from "react";
+import supportedLanguages from "../utils/supportedLanguages";
+import { useDispatch, useSelector } from "react-redux";
+import { changePageLanguage } from "../utils/storeutils/slices/configSlice";
 
 const HeaderLanguageAccordion = () => {
 
-    const [showDiv, setShowDiv] = useState(false);
+    const dispatch = useDispatch();
+    const currLang = useSelector(store => store.appConfig.lang);
 
-    const handleClick = () => {
-        setShowDiv(!showDiv);
+    const handleChange = (e) => {
+        dispatch(changePageLanguage(e.target.value));
     }
 
     return (
-        <div className="p-2">
-            <div className="bg-transparent text-white flex justify-between  px-8 py-2 focus:border-2 border border-white" onClick={handleClick}>
-                <h1 className="text-lg">English</h1>
-            </div>
-            <div className="items-center">
-                {
-                    (showDiv) && 
-                    (<div className="absolute items-center">
-                        <ul className="bg-white text-black px-9">
-                            <li className=" hover:bg-blue-600 hover:text-white hover:w-full">English</li>
-                            <li className=" hover:bg-blue-600 hover:text-white">Hindi</li>
-                        </ul>
-                    </div>)
-                }
-            </div>
-            
-        </div>
+
+        <select onChange={handleChange} value={currLang} className="h-12 m-2 rounded-md px-6 bg-black text-white border border-white font-bold">
+            {supportedLanguages.map((lang) => (<option value={lang.code} className="bg-white text-black">{lang.name}</option>))}
+        </select>
         
     )
 }

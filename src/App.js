@@ -4,13 +4,13 @@ import Header from './components/Header';
 import Login from './components/Login'
 import Body from './components/Body';
 import { Provider } from 'react-redux';
-import UserStore from './utils/UserStore';
+import AppStore from './utils/storeutils/AppStore';
 import Browse from './components/Browse';
 
 function App() {
 
   return (
-    <Provider store={UserStore}>
+    <Provider store={AppStore}>
         <div>
           <Header/>
           <Outlet/>
@@ -35,7 +35,7 @@ export const AppRouter = createBrowserRouter([
       {
         path: "/browse",
         element: <Browse/>
-      }
+      },
     ]
   }
   

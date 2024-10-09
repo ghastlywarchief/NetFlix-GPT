@@ -3,9 +3,10 @@ import HeaderLanguageAccordion from "./HeaderLanguageAccordion";
 import { useEffect, useState } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { addUser, removeUser } from "../utils/userSlice";
-import { useDispatch } from "react-redux";
+import { addUser, removeUser } from "../utils/storeutils/slices/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 import { LOGO_URL } from "../utils/constants";
+import { setGPTSearchToggle } from "../utils/storeutils/slices/gptsearchToggleSlice";
 
 const Header = () => {
 
@@ -13,6 +14,7 @@ const Header = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+    const gptSearchClicked = useSelector(store => store.gptSearch.gptSearchToggle);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -34,7 +36,9 @@ const Header = () => {
       }
     }, []);
 
-
+    const handleGPTSearchClick = () => {
+      dispatch(setGPTSearchToggle());
+    }
 
     const handleClick = () => {
         if(isUserLoggedIn)
@@ -51,6 +55,7 @@ const Header = () => {
             </div>
             { (location.pathname !== "/login") && <div className="p-2 m-2 flex justify-around">
                 <HeaderLanguageAccordion />
+                {(isUserLoggedIn) && <button className="bg-red-700 text-white rounded-md p-2 m-2 font-bold w-28 h-12" onClick={handleGPTSearchClick}>{ gptSearchClicked ? "Homepage" : "GPT Search"}</button>}
                 <Link to="/login"><button className="bg-red-700 text-white rounded-md p-2 m-2 font-bold w-28 h-12" onClick={handleClick}>{(!isUserLoggedIn) ? "Sign In" : "Sign Out"}</button></Link>
             </div>}
         </div>

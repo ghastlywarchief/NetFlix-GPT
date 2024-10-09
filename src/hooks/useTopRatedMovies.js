@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { API_OPTIONS, TOP_RATED_URL } from "../utils/constants";
 import { useDispatch } from "react-redux";
-import { addTopRatedMovies } from "../utils/moviesSlice";
+import { addTopRatedMovies } from "../utils/storeutils/slices/moviesSlice";
 
 const useTopRatedMovies = () => {
 

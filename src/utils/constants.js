@@ -27,3 +27,5 @@ export const UPCOMING_URL = "https://api.themoviedb.org/3/movie/upcoming"
 export const TRAILER_PREFIX = 'https://api.themoviedb.org/3/movie/'
 
 export const TRAILER_SUFFIX = '/videos?language=en-US'
+
+export const GPT_API_KEY = 'sk-FAwp1l8WF1Ws6WOVgn7qaBtiNtodKS4Ednh6Le63DAT3BlbkFJKZRZD_rh0Fc9lYDIh56P8kuTisGYJjYCRY83S--OoA'
