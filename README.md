@@ -1,20 +1,20 @@
 # Uploading snapshots of the working website, since TMDB Apis fail in most networks:
 
 #   Homepage
-(![homepage](https://github.com/user-attachments/assets/319733bc-7496-46b4-82c8-2a0d90e04b85))
+![homepage](https://github.com/user-attachments/assets/319733bc-7496-46b4-82c8-2a0d90e04b85)
 
 #   Login Form
-(![login form](https://github.com/user-attachments/assets/f3c76090-01ac-49df-96b8-f854412b8907))
+![login form](https://github.com/user-attachments/assets/f3c76090-01ac-49df-96b8-f854412b8907)
 
 #   Sign-up form(toggled from login form by clicking the text below login form)
-(![sign-up form](https://github.com/user-attachments/assets/a1dfafd4-0390-4b27-b675-c90a7ea2747d))
+![sign-up form](https://github.com/user-attachments/assets/a1dfafd4-0390-4b27-b675-c90a7ea2747d)
 
 #   CHATGPT Search
-(![AI movie-recommender](https://github.com/user-attachments/assets/08b452eb-eea3-4991-8eb6-2d198e1152f1))
+![AI movie-recommender](https://github.com/user-attachments/assets/08b452eb-eea3-4991-8eb6-2d198e1152f1)
 
 #   Language Toggle
-(![toggle dropdown](https://github.com/user-attachments/assets/50b15158-1a44-4c16-8b41-04788254c5b3))
-(![hindi language](https://github.com/user-attachments/assets/6aecada5-2e14-4664-ab1d-afadbb620779))
+![toggle dropdown](https://github.com/user-attachments/assets/50b15158-1a44-4c16-8b41-04788254c5b3)
+![hindi language](https://github.com/user-attachments/assets/6aecada5-2e14-4664-ab1d-afadbb620779)
 
 
 # Getting Started with Create React App
