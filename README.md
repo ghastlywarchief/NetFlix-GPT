@@ -1,3 +1,21 @@
+# Uploading snapshots of the working website, since TMDB Apis fail in most networks:
+
+#   Homepage
+    ![homepage](/images/Screenshot_2024-12-03_01_33_25.png)
+
+#   Login Form
+    ![login form](/images/Screenshot_2024-12-03_01_34_32.png)
+
+#   Sign-up form(toggled from login form by clicking the text below login form)
+    ![sign-up form](/images/Screenshot_2024-12-03_01_34_46.png)
+
+#   CHATGPT Search
+    ![AI movie-recommender](/images/Screenshot_2024-12-03_01_33_48.png)
+
+#   Language Toggle
+    ![toggle dropdown](/images/Screenshot_2024-12-03_01_33_51.png) 
+    ![hindi language](/images/Screenshot_2024-12-03_01_33_53.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
