@@ -1,4 +1,4 @@
-# Uploading snapshots of the working website, since TMDB Apis fail in most networks:
+# Uploading snapshots of the working website, since TMDB Apis fail in some networks:
 
 #   Homepage
 ![homepage](https://github.com/user-attachments/assets/319733bc-7496-46b4-82c8-2a0d90e04b85)
@@ -9,8 +9,8 @@
 #   Sign-up form(toggled from login form by clicking the text below login form)
 ![sign-up form](https://github.com/user-attachments/assets/a1dfafd4-0390-4b27-b675-c90a7ea2747d)
 
-#   CHATGPT Search
-![AI movie-recommender](https://github.com/user-attachments/assets/08b452eb-eea3-4991-8eb6-2d198e1152f1)
+#   AI Search
+![AI movie-recommender](https://github.com/user-attachments/assets/e7ccf6b6-450e-4a9e-88dd-16700e5d0af3)
 
 #   Language Toggle
 ![toggle dropdown](https://github.com/user-attachments/assets/50b15158-1a44-4c16-8b41-04788254c5b3)

@@ -24,8 +24,10 @@ export const TOP_RATED_URL = "https://api.themoviedb.org/3/movie/top_rated"
 
 export const UPCOMING_URL = "https://api.themoviedb.org/3/movie/upcoming"
 
-export const TRAILER_PREFIX = 'https://api.themoviedb.org/3/movie/'
+export const TRAILER_PREFIX = "https://api.themoviedb.org/3/movie/"
 
-export const TRAILER_SUFFIX = '/videos?language=en-US'
+export const TRAILER_SUFFIX = "/videos?language=en-US"
 
-export const GPT_API_KEY = process.env.REACT_APP_OPENAI_KEY
+export const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_KEY
+
+export const FIREBASE_API_KEY = process.env.REACT_APP_FIREBASE_KEY

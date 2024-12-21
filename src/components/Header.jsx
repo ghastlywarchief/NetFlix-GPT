@@ -6,7 +6,7 @@ import { auth } from "../utils/firebase";
 import { addUser, removeUser } from "../utils/storeutils/slices/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { LOGO_URL } from "../utils/constants";
-import { setGPTSearchToggle } from "../utils/storeutils/slices/gptsearchToggleSlice";
+import { setAISearchToggle } from "../utils/storeutils/slices/aiSearchToggleSlice";
 
 const Header = () => {
 
@@ -14,7 +14,7 @@ const Header = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
-    const gptSearchClicked = useSelector(store => store.gptSearch.gptSearchToggle);
+    const aiSearchClicked = useSelector(store => store.aiSearch.aiSearchToggle);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -36,8 +36,8 @@ const Header = () => {
       }
     }, []);
 
-    const handleGPTSearchClick = () => {
-      dispatch(setGPTSearchToggle());
+    const handleAISearchClick = () => {
+      dispatch(setAISearchToggle());
     }
 
     const handleClick = () => {
@@ -55,7 +55,7 @@ const Header = () => {
             </div>
             { (location.pathname !== "/login") && <div className="p-2 m-2 flex justify-around">
                 <HeaderLanguageAccordion />
-                {(isUserLoggedIn) && <button className="bg-red-700 text-white rounded-md p-2 m-2 font-bold w-28 h-12" onClick={handleGPTSearchClick}>{ gptSearchClicked ? "Homepage" : "GPT Search"}</button>}
+                {(isUserLoggedIn) && <button className="bg-red-700 text-white rounded-md p-2 m-2 font-bold w-28 h-12" onClick={handleAISearchClick}>{ aiSearchClicked ? "Homepage" : "AI Search"}</button>}
                 <Link to="/login"><button className="bg-red-700 text-white rounded-md p-2 m-2 font-bold w-28 h-12" onClick={handleClick}>{(!isUserLoggedIn) ? "Sign In" : "Sign Out"}</button></Link>
             </div>}
         </div>

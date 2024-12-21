@@ -6,7 +6,7 @@ import usePopularMovies from '../hooks/usePopularMovies';
 import useTopRatedMovies from '../hooks/useTopRatedMovies';
 import useUpcomingMovies from '../hooks/useUpcomingMovies';
 import { useSelector } from 'react-redux';
-import GPTSearch from './GPTSearch';
+import AISearch from './AISearch';
 
 const Browse = () => {
 
@@ -14,7 +14,7 @@ const Browse = () => {
   usePopularMovies();
   useTopRatedMovies();
   useUpcomingMovies();
-  const gptSearchClicked = useSelector(store => store.gptSearch.gptSearchToggle);
+  const aiSearchClicked = useSelector(store => store.aiSearch.aiSearchToggle);
   const nowPlayingMovies = useSelector(store => store.movies?.nowPlayingMovies);
   const popularMovies = useSelector(store => store.movies?.popularMovies);
   const topRatedMovies = useSelector(store => store.movies?.topRatedMovies);
@@ -22,8 +22,8 @@ const Browse = () => {
 
   return (
     <>
-      {(gptSearchClicked) ? 
-        (<GPTSearch/>) : 
+      {(aiSearchClicked) ? 
+        (<AISearch/>) : 
         (<div>
           <BrowseIFrame/>
           <div className='absolute z-30 bg-black'>
