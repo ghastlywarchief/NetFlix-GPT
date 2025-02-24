@@ -1,3 +1,6 @@
+#This project is deployed on firebase, please find the link below:
+  [https://netflix-gpt-2619f.web.app/]
+
 # Uploading snapshots of the working website, since TMDB Apis fail in some networks:
 
 #   Homepage
