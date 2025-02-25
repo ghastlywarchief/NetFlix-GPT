@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NetFlix-GPT/static/css/main.ccc66540.css",
+    "main.js": "/NetFlix-GPT/static/js/main.887da146.js",
+    "static/js/453.ba9ac462.chunk.js": "/NetFlix-GPT/static/js/453.ba9ac462.chunk.js",
+    "index.html": "/NetFlix-GPT/index.html",
+    "main.ccc66540.css.map": "/NetFlix-GPT/static/css/main.ccc66540.css.map",
+    "main.887da146.js.map": "/NetFlix-GPT/static/js/main.887da146.js.map",
+    "453.ba9ac462.chunk.js.map": "/NetFlix-GPT/static/js/453.ba9ac462.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccc66540.css",
+    "static/js/main.887da146.js"
+  ]
+}
